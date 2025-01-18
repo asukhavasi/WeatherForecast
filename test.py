@@ -1,7 +1,10 @@
-import pandas as pd
-import matplotlib.pyplot as plt
-dict = {"days":[1,2,3,4,5],"temp":[20,25,15,28,20]}
-
-df = pd.DataFrame.from_dict(dict)
-
-df.plot(x='days',y='temp',figsize=(15,3))
+dates = ["2024-12-01","2024-12-02","2024-12-03","2024-12-04","2024-12-05"]
+temp = [20,22,30,18,25]
+days = 4
+selected_days = []
+temp_dynamic = []
+for i in range(days):
+    selected_days.append(dates[i])
+    temp_dynamic.append(temp[i])
+print(selected_days)
+print(temp_dynamic)
